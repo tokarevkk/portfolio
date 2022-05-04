@@ -100,3 +100,61 @@ body{
 .language span{
   color: #BDAE82;
 }
+.skills{
+  width: 320;
+  height: 240;
+  text-align: center;
+  margin-right: 40px;
+}
+.skills__header{
+  line-height: 80px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 80px;
+}
+.intro{
+  background-color: #000;
+  /* height: 482px; */
+}
+.skills__content{
+  display: flex;
+  font-size: 20px;
+}
+
+.skill__text{
+font-size: 18px;
+text-align: center;
+line-height: 36px;
+font-weight: 400;
+width: 280;
+margin-bottom: 8px;
+}
+.skill__header{
+margin-top: 40px;
+padding-bottom: 20px;
+}
+
+.portfolio{
+  background-color: #000;
+}
+.portfolio__title{
+  padding-top: 100px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.buttons{
+  display: flex;
+  margin-top: 60px;
+  margin-right: 5px;
+}
+
+.pf_buttons{
+width: 220px;
+height: 55px;
+background-color: #000;
+border: 1px solid #000;
+}
