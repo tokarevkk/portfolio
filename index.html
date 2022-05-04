@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -14,7 +15,11 @@
           <div class="header__top">
             <nav class="menu">
               <a class="logo">
-                <img src="" class="logo__img" alt="logo img" />
+                <img
+                  src="../images/logo.png"
+                  class="logo__img"
+                  alt="logo__img"
+                />
               </a>
               <ul class="menu__list">
                 <li class="menu__item">
@@ -34,9 +39,8 @@
                 </li>
               </ul>
             </nav>
-            <a href="#" class="language"> en / ru</a>
+            <a href="#" class="language"> <span>en</span> / ru</a>
           </div>
-          <div class="header__nav"></div>
 
           <div class="header__content">
             <h1 class="header__title">Alexa Rise</h1>
@@ -46,10 +50,64 @@
                 life together with professional photographer Alexa Rise
               </p>
             </div>
-            <button class="header__btn">Hire me</button>
+            <button class="header__btn">
+              <p>Hire me</p>
+            </button>
           </div>
         </div>
       </div>
     </header>
+    <section class="intro">
+      <div class="container">
+        <div class="skills__header">Skills</div>
+        <div class="skills__content">
+          <ul class="skills">
+            <img src="../images/camera 1.png" alt="1st skill" />
+            <div class="skill__header">Digital photography</div>
+            <div class="skill_text">
+              High-quality photos in the studio and on the nature
+            </div>
+          </ul>
+          <ul class="skills">
+            <img src="../images/video 1.png" alt="2st skill" />
+            <div class="skill__header">Video shooting</div>
+            <div class="skill_text">
+              Capture your moments so that they always stay with you
+            </div>
+          </ul>
+          <ul class="skills">
+            <img src="../images/image 1.png" alt="3st skill" />
+            <div class="skill__header">Retouch</div>
+            <div class="skill_text">
+              I strive to make photography surpass reality
+            </div>
+          </ul>
+          <ul class="skills">
+            <img src="../images/mic 1.png" alt="4st skill" />
+            <div class="skill__header">Audio</div>
+            <div class="skill_text">
+              Professional sounds recording for video, advertising, portfolio
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="portfolio__title">Portfolio</div>
+      <div class="buttons">
+        <button class="pf_button">winter</button>
+        <button class="pf_button">spring</button>
+        <button class="pf_button">summer</button>
+        <button class="pf_button">autumn</button>
+      </div>
+      <div class="portfolio__items">
+        <img src="#" alt="img1" class="items" />
+        <img src="#" alt="img2" class="items" />
+        <img src="#" alt="img3" class="items" />
+        <img src="#" alt="img4" class="items" />
+        <img src="#" alt="img5" class="items" />
+        <img src="#" alt="img6" class="items" />
+      </div>
+    </section>
   </body>
 </html>
