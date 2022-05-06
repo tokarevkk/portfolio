@@ -116,11 +116,9 @@ body{
 }
 .intro{
   background-color: #000;
-  /* height: 482px; */
 }
 .skills__content{
   display: flex;
-  /* font-size: 20px; */
 }
 
 .skill__text{
@@ -184,11 +182,4 @@ transition: .5s;
   grid-column-gap: 25px;
   grid-row-gap: 25px;
   justify-content: center;
-  
-
-  /* display: flex;
-  flex-direction: row;
-  margin-right: auto;
-  margin-left: auto; */
-
 }
