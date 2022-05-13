@@ -11,6 +11,7 @@ a{
 
 body{
   color: #fff;
+  background-color: #000;
 }
 .container{
   max-width: 1440px;
@@ -37,7 +38,6 @@ body{
 
 .logo{
   padding-top: 20px;
-  padding-left: 20px;
 }
 .header__top{
   display: flex;
@@ -59,7 +59,7 @@ body{
   font-weight: 400; 
   margin-right: 30px;
   text-align: right;
-  color: #BDAE82;
+  color: #fff;
 }
 .header__content{
   padding-top: 250px;
@@ -77,6 +77,8 @@ body{
 }
 .header__text{
   margin-top: 20px;
+  line-height: 40px;
+  font-size: 20px;
 }
 
 .header__btn{
@@ -85,6 +87,7 @@ body{
   margin-top: 20px;
   text-align: center;
   background-color: #BDAE82;
+  cursor: pointer;
 }
 .header__btn p{
   text-align: center;
@@ -93,6 +96,7 @@ body{
   padding-top: 8px;
   color: #000;
   font-weight: 400;
+  
 }
 .language{
   font-size: 20px;
@@ -100,20 +104,36 @@ body{
 .language span{
   color: #BDAE82;
 }
+.top{
+  padding-top: 100px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #BDAE82;
+  margin: 1em 0;
+  padding: 0;
+}
 .skills{
   width: 320;
   height: 240;
   text-align: center;
   margin-right: 40px;
 }
+
 .skills__header{
   line-height: 80px;
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  padding-top: 100px;
-  margin-bottom: 80px;
   color: #BDAE82;
+  margin: 0 20px;
+
 }
 .intro{
   background-color: #000;
@@ -158,6 +178,7 @@ font-size: 20px;
   margin-bottom: 60px;
   font-size: 20px;
   border: 5px;
+  cursor: pointer;
   
 }
 
@@ -171,6 +192,7 @@ border: 1px solid #BDAE82;
 font-size: 20px;
 color: #BDAE82;
 transition: .5s;
+cursor: pointer;
 }
 
 .buttons :hover{
@@ -195,7 +217,20 @@ transition: .5s;
   padding-top: 60px;
   margin-bottom: 50px;
   color: #BDAE82;
+  
 }
+
+.video__item{
+  position: relative;
+  z-index: 1;
+}
+.play__pause{
+  position: absolute;
+  top: 360%;
+  left: 47%;
+  z-index: 2;
+}
+
 .price{
   background-color: #000;
 }
@@ -243,6 +278,7 @@ transition: .5s;
   margin-right: auto;
   margin-left: auto;
   width: 200px;
+  line-height: 36px;
 }
 
 .order{
@@ -253,5 +289,116 @@ transition: .5s;
  font-size: 20px;
  margin-right: auto;
  margin-left: 120px;
- padding: 0 0 0 0;
+}
+
+.contacts{
+  background-color: #000;
+  background-image: url(../images/contacts.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  background-size: cover;
+}
+
+.input{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-right: 20px;
+}
+.form{
+  width: 450px;
+  height: 445px;
+}
+.form__title{
+  line-height: 80px;
+  font-size: 40px;
+  color: #BDAE82;
+}
+
+.form__group{
+  position: relative;
+}
+
+
+.form__label{
+position: absolute;
+top: 0;
+z-index: 0;
+color: #BDAE82;
+transition: 0.3s;
+font-size: 20px;
+}
+
+.form__input{
+  width: 100%;
+  border: solid 1px #BDAE82;
+  background-color: transparent;
+  outline: none;
+  transition: 0.3s;
+  color: #BDAE82;
+  line-height: 50px;
+  margin-top: 20px;
+}
+.form__input1{
+  width: 100%;
+  border: solid 1px #BDAE82;
+  background-color: transparent;
+  outline: none;
+  transition: 0.3s;
+  color: #BDAE82;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.form__button{
+  width: 220px;
+  height: 55px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #BDAE82;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+::placeholder{
+  color: #BDAE82;
+  font-size: 20px;
+  vertical-align: top;
+}
+
+textarea{
+  padding: 3px 0 0 10px;
+  font-size: 20px;
+}
+
+input{
+  font-size: 20px;
+  padding-left: 10px;
+  text-align: start;
+  padding-bottom: 10px;
+}
+
+.footer{
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.copyright{
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.school{
+  font-size: 20px;
+  line-height: 50px;
+  width: 220px;
+}
+
+.link{
+  width: 200px;
+  line-height: 50px;
 }
