@@ -20,13 +20,6 @@ body{
   padding-left: 20px;
   padding-right: 20px;
 }
-.container__header{
-   max-width: 1440px;
-   margin-right: auto;
-   margin-left: auto;
-   padding-left: 20px;
-   padding-right: 20px;
- }
 
 .header{
   background-image: url(../images/headerbg.jpg);
@@ -404,9 +397,122 @@ input{
   max-width: 200px;
   line-height: 50px;
 }
+.line1{
+   width: 350px;
+   text-align: left;
+   margin-left: 0;
+}
+.line2{
+   width: 350px;
+   text-align: left;
+   margin-right: 0;
+}
 
 @media (max-width: 768px){
 .container{
   max-width: 760px;
+
+}
+.portfolio__items{
+   grid-template-columns: auto;
+   /* flex-direction: column; */
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .video__item{
+    max-width: 100vh;
+ }
+ .buttons {
+   display: flex;
+   margin-top: 60px;
+   max-width: auto;
+   height: 55px;
+   width: 720px;
+}
+.price__list{
+   flex-direction: column;
+}
+.variants{
+   margin-bottom: 50px;
+}
+
+.line1{
+   width: 175px;
+   text-align: left;
+   margin-left: 0;
+}
+.line2{
+   width: 175px;
+   text-align: left;
+   margin-right: 0;
+}
+.header__top{
+   margin-right: 20px;
+   margin-left: 20px;
+}
+.header__content{
+   line-height: 24.2px;
+   font-weight: normal;
+   font-size: 20px;
+}
+.header__title{
+   font-size: 36px;
+   font-weight: normal;
+}
+.variant{
+   margin-bottom: 50px;
+}
+
+.play__pause{
+   width: 75px;
+   height: 75px;
+   top: 796%;
+   left: 45%;
+}
+.form__title{
+   text-align: center;
+}
+textarea{
+   width: 100%;
+}
+
+.input{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.form__button{
+   margin-left: 25%;
+}
+.footer{
+   flex-direction: column;
+   align-items: center;
+   margin-top: 28px;
+   padding: 0;
+   justify-content: normal
+}
+.copyright{
+   line-height: 24.2px;
+   height: 25px;
+   font-weight: 400;
+}
+.school{
+   line-height: 24.2px;
+   height: 25px;
+   font-weight: 400;
+}
+.link{
+   line-height: 24.2px;
+   height: 25px;
+}
+.skills__content{
+   display: grid;
+   grid-template-columns: auto auto;
+   align-items: center;
+   margin: 20px 20px;
+   padding: 20px 20px;
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
 }
 }
