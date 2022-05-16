@@ -4,56 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <section class="header">
-      <div class="container">
-        <div class="headder__inner">
-          <div class="header__top">
-            <nav class="menu">
-              <a class="logo">
-                <img
-                  src="../images/logo.png"
-                  class="logo__img"
-                  alt="logo__img"
-                />
-              </a>
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Skills</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Protfolio</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Video</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Price</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Contacts</a>
-                </li>
-              </ul>
-            </nav>
-            <a href="#" class="language"> <span>en</span> / ru</a>
+      <div class="container__header">
+        <div class="header__top">
+          <a class="logo">
+            <img src="../images/logo.png" class="logo__img" alt="logo__img" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a data-goto=".page__section_1" href="#" class="menu__link">
+                  Skills
+                </a>
+              </li>
+              <li class="menu__item">
+                <a data-goto=".page__section_2" href="#" class="menu__link"
+                  >Protfolio</a
+                >
+              </li>
+              <li class="menu__item">
+                <a data-goto=".page__section_3" href="#" class="menu__link"
+                  >Video</a
+                >
+              </li>
+              <li class="menu__item">
+                <a data-goto=".page__section_4" href="#" class="menu__link"
+                  >Price</a
+                >
+              </li>
+              <li class="menu__item">
+                <a data-goto=".page__section_5" href="#" class="menu__link"
+                  >Contacts</a
+                >
+              </li>
+              <a href="#" class="language"> <span>en</span> / ru</a>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__content">
+          <h1 class="header__title">Alexa Rise</h1>
+          <div class="header__text">
+            <p>
+              Save sincere emotions, romantic feelings and happy moments of life
+              together with professional photographer Alexa Rise
+            </p>
           </div>
-
-          <div class="header__content">
-            <h1 class="header__title">Alexa Rise</h1>
-            <div class="header__text">
-              <p>
-                Save sincere emotions, romantic feelings and happy moments of
-                life together with professional photographer Alexa Rise
-              </p>
-            </div>
-            <button class="header__btn">
-              <p>Hire me</p>
-            </button>
-          </div>
+          <button class="header__btn">Hire me</button>
         </div>
       </div>
     </section>
@@ -170,7 +171,9 @@
                 One location 120 photos in color 12 photos in retouch Readiness
                 2-3 weeks Make up, visage
               </div>
-              <button class="order">Order shooting</button>
+              <button class="order" style="margin-top: 34px">
+                Order shooting
+              </button>
             </li>
             <li class="variant">
               <div class="price__title">Premium</div>
