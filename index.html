@@ -4,67 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <section class="header">
-      <div class="container">
-        <div class="headder__inner">
-          <div class="header__top">
-            <nav class="menu">
-              <a class="logo">
-                <img
-                  src="../images/logo.png"
-                  class="logo__img"
-                  alt="logo__img"
-                />
-              </a>
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Skills</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Protfolio</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Video</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Price</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Contacts</a>
-                </li>
-              </ul>
-            </nav>
-            <a href="#" class="language"> <span>en</span> / ru</a>
+      <div class="container__header">
+        <div class="header__top">
+          <a class="logo">
+            <img src="../images/logo.png" class="logo__img" alt="logo__img" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a
+                  data-goto=".page__section_1"
+                  href="#skills"
+                  class="menu__link"
+                >
+                  Skills
+                </a>
+              </li>
+              <li class="menu__item">
+                <a
+                  data-goto=".page__section_2"
+                  href="#portfolio"
+                  class="menu__link"
+                  >Protfolio</a
+                >
+              </li>
+              <li class="menu__item">
+                <a data-goto=".page__section_3" href="#video" class="menu__link"
+                  >Video</a
+                >
+              </li>
+              <li class="menu__item">
+                <a data-goto=".page__section_4" href="#price" class="menu__link"
+                  >Price</a
+                >
+              </li>
+              <li class="menu__item">
+                <a
+                  data-goto=".page__section_5"
+                  href="#contacts"
+                  class="menu__link"
+                  >Contacts</a
+                >
+              </li>
+              <a href="#" class="language"> <span>en</span> / ru</a>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__content">
+          <h1 class="header__title">Alexa Rise</h1>
+          <div class="header__text">
+            <p>
+              Save sincere emotions, romantic feelings and happy moments of life
+              together with professional photographer Alexa Rise
+            </p>
           </div>
-
-          <div class="header__content">
-            <h1 class="header__title">Alexa Rise</h1>
-            <div class="header__text">
-              <p>
-                Save sincere emotions, romantic feelings and happy moments of
-                life together with professional photographer Alexa Rise
-              </p>
-            </div>
-            <button class="header__btn">
-              <p>Hire me</p>
-            </button>
-          </div>
+          <button class="header__btn">Hire me</button>
         </div>
       </div>
     </section>
     <section>
-      <div class="top">
+      <div id="skills" class="top">
         <div class="line1">
-          <hr style="width: 350px; text-align: left; margin-left: 0" />
+          <hr />
         </div>
         <div class="skills__header">Skills</div>
         <div class="line2">
-          <hr style="width: 350px; text-align: right; margin-left: 0" />
+          <hr />
         </div>
       </div>
     </section>
@@ -103,13 +114,13 @@
       </div>
     </section>
     <section>
-      <div class="top">
+      <div id="portfolio" class="top">
         <div class="line1">
-          <hr style="width: 350px; text-align: left; margin-left: 0" />
+          <hr />
         </div>
         <div class="skills__header">Portfolio</div>
         <div class="line2">
-          <hr style="width: 350px; text-align: right; margin-left: 0" />
+          <hr />
         </div>
       </div>
     </section>
@@ -132,34 +143,35 @@
       </div>
     </section>
     <section>
-      <div class="top">
+      <div id="video" class="top">
         <div class="line1">
-          <hr style="width: 350px; text-align: left; margin-left: 0" />
+          <hr />
         </div>
         <div class="skills__header">Video</div>
         <div class="line2">
-          <hr style="width: 350px; text-align: right; margin-left: 0" />
+          <hr />
         </div>
       </div>
     </section>
     <section class="video">
       <div class="container">
-        <img src="images/Play_hover.png" class="play__pause" />
-        <video poster="images/video-player.png" class="video__item"></video>
+        <video poster="../images/video-player.png" controls class="video__item">
+          <source src="../video/pexels-arvin-latifi-6466763.mp4" />
+        </video>
       </div>
     </section>
     <section>
-      <div class="top">
+      <div id="price" class="top">
         <div class="line1">
-          <hr style="width: 350px; text-align: left; margin-left: 0" />
+          <hr />
         </div>
         <div class="skills__header">Price</div>
         <div class="line2">
-          <hr style="width: 350px; text-align: right; margin-left: 0" />
+          <hr />
         </div>
       </div>
     </section>
-    <section class="price">
+    <section id="price" class="price">
       <div class="container">
         <div class="variants">
           <ul class="price__list">
@@ -170,7 +182,9 @@
                 One location 120 photos in color 12 photos in retouch Readiness
                 2-3 weeks Make up, visage
               </div>
-              <button class="order">Order shooting</button>
+              <button class="order" style="margin-top: 34px">
+                Order shooting
+              </button>
             </li>
             <li class="variant">
               <div class="price__title">Premium</div>
@@ -194,7 +208,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section id="contacts" class="contacts">
       <div class="container">
         <div class="input">
           <form class="form">

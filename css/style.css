@@ -29,13 +29,6 @@ body{
   min-height: 100vh;
 }
 
-.header__inner{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  min-height: 100vh;
-}
-
 .logo{
   padding-top: 20px;
 }
@@ -52,7 +45,16 @@ body{
   display: flex;
   margin-top: 25px;
   text-align: right;
-  margin-left: 800px;
+  margin-left: auto;
+}
+
+.menu__list :hover{
+  color: #BDAE82;
+}
+
+.header__top{
+   margin-left: 20px;
+   margin-right: 20px;
 }
 .menu__item{
   font-size: 20px;
@@ -69,11 +71,10 @@ body{
   font-size: 60px;
 }
 
-.header__content p{
+.header__btn{
   font-size: 20px;
   text-align: left;
   padding-right: 20px;
-  
 }
 .header__text{
   margin-top: 20px;
@@ -88,16 +89,14 @@ body{
   text-align: center;
   background-color: #BDAE82;
   cursor: pointer;
-}
-.header__btn p{
-  text-align: center;
-  padding-left: 20px;
-  padding-bottom: 7px;
-  padding-top: 8px;
   color: #000;
-  font-weight: 400;
-  
 }
+
+.header__btn :hover{
+   color: #fff;
+   background-color: #BDAE82;
+}
+
 .language{
   font-size: 20px;
 }
@@ -221,14 +220,7 @@ cursor: pointer;
 }
 
 .video__item{
-  position: relative;
-  z-index: 1;
-}
-.play__pause{
-  position: absolute;
-  top: 360%;
-  left: 47%;
-  z-index: 2;
+  max-width: 100%;
 }
 
 .price{
@@ -395,10 +387,124 @@ input{
 .school{
   font-size: 20px;
   line-height: 50px;
-  width: 220px;
+  max-width: 220px;
 }
 
 .link{
-  width: 200px;
+  max-width: 200px;
   line-height: 50px;
+}
+.line1{
+   width: 350px;
+   text-align: left;
+   margin-left: 0;
+}
+.line2{
+   width: 350px;
+   text-align: left;
+   margin-right: 0;
+}
+
+@media (max-width: 768px){
+.container{
+  max-width: 760px;
+
+}
+.portfolio__items{
+   grid-template-columns: auto;
+   /* flex-direction: column; */
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .video__item{
+    max-width: 100vh;
+ }
+ .buttons {
+   display: flex;
+   margin-top: 60px;
+   max-width: auto;
+   height: 55px;
+   width: 720px;
+}
+.price__list{
+   flex-direction: column;
+}
+.variants{
+   margin-bottom: 50px;
+}
+
+.line1{
+   width: 175px;
+   text-align: left;
+   margin-left: 0;
+}
+.line2{
+   width: 175px;
+   text-align: left;
+   margin-right: 0;
+}
+.header__top{
+   margin-right: 20px;
+   margin-left: 20px;
+}
+.header__content{
+   line-height: 24.2px;
+   font-weight: normal;
+   font-size: 20px;
+}
+.header__title{
+   font-size: 36px;
+   font-weight: normal;
+}
+.variant{
+   margin-bottom: 50px;
+}
+
+
+.form__title{
+   text-align: center;
+}
+textarea{
+   width: 100%;
+}
+
+.input{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.form__button{
+   margin-left: 25%;
+}
+.footer{
+   flex-direction: column;
+   align-items: center;
+   margin-top: 28px;
+   padding: 0;
+   justify-content: normal
+}
+.copyright{
+   line-height: 24.2px;
+   height: 25px;
+   font-weight: 400;
+}
+.school{
+   line-height: 24.2px;
+   height: 25px;
+   font-weight: 400;
+}
+.link{
+   line-height: 24.2px;
+   height: 25px;
+}
+.skills__content{
+   display: grid;
+   grid-template-columns: auto auto;
+   align-items: center;
+   margin: 20px 20px;
+   padding: 20px 20px;
+   grid-column-gap: 20px;
+   grid-row-gap: 20px;
+}
 }
