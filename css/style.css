@@ -52,6 +52,10 @@ body{
   color: #BDAE82;
 }
 
+.header__top{
+   margin-left: 20px;
+   margin-right: 20px;
+}
 .menu__item{
   font-size: 20px;
   font-weight: 400; 
@@ -216,14 +220,7 @@ cursor: pointer;
 }
 
 .video__item{
-  position: relative;
-  z-index: 1;
-}
-.play__pause{
-  position: absolute;
-  top: 360%;
-  left: 47%;
-  z-index: 2;
+  max-width: 100%;
 }
 
 .price{
@@ -463,12 +460,7 @@ input{
    margin-bottom: 50px;
 }
 
-.play__pause{
-   width: 75px;
-   height: 75px;
-   top: 796%;
-   left: 45%;
-}
+
 .form__title{
    text-align: center;
 }
