@@ -206,6 +206,10 @@ cursor: pointer;
   grid-row-gap: 25px;
   justify-content: center;
 }
+.pf_button_active{
+   background-color: #BDAE82;
+   color: #000;
+}
 .video{
   background-color: #000;
 }
