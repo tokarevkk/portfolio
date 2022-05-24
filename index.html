@@ -18,43 +18,40 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a
-                  data-goto=".page__section_1"
-                  href="#skills"
-                  class="menu__link"
-                >
-                  Skills
-                </a>
+                <a href="#skills" class="menu__link"> Skills </a>
               </li>
               <li class="menu__item">
-                <a
-                  data-goto=".page__section_2"
-                  href="#portfolio"
-                  class="menu__link"
-                  >Protfolio</a
-                >
+                <a href="#portfolio" class="menu__link">Protfolio</a>
               </li>
               <li class="menu__item">
-                <a data-goto=".page__section_3" href="#video" class="menu__link"
-                  >Video</a
-                >
+                <a href="#video" class="menu__link">Video</a>
               </li>
               <li class="menu__item">
-                <a data-goto=".page__section_4" href="#price" class="menu__link"
-                  >Price</a
-                >
+                <a href="#price" class="menu__link">Price</a>
               </li>
               <li class="menu__item">
-                <a
-                  data-goto=".page__section_5"
-                  href="#contacts"
-                  class="menu__link"
-                  >Contacts</a
-                >
+                <a href="#contacts" class="menu__link">Contacts</a>
               </li>
-              <a href="#" class="language"> <span>en</span> / ru</a>
             </ul>
           </nav>
+          <a href="#" class="language"> <span>en</span> / ru</a>
+          <div class="menu__icon">
+            <span></span>
+          </div>
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+
+            <ul class="menu__box">
+              <li><a class="menu__items" href="#skills">Skills</a></li>
+              <li><a class="menu__items" href="#portfolio">Portfolio</a></li>
+              <li><a class="menu__items" href="#video">Video</a></li>
+              <li><a class="menu__items" href="#price">Price</a></li>
+              <li><a class="menu__items" href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
         </div>
         <div class="header__content">
           <h1 class="header__title">Alexa Rise</h1>
@@ -127,19 +124,12 @@
     <section class="portfolio">
       <div class="container">
         <div class="buttons">
-          <button class="pf_button">winter</button>
-          <button class="pf_button">spring</button>
-          <button class="pf_button">summer</button>
-          <button class="pf_button">autumn</button>
+          <button class="pf_button">Winter</button>
+          <button class="pf_button">Spring</button>
+          <button class="pf_button">Summer</button>
+          <button class="pf_button pf_button_active">Autumn</button>
         </div>
-        <div class="portfolio__items">
-          <img src="../images/pair.jpg" alt="img1" class="items" />
-          <img src="../images/horse.jpg" alt="img2" class="items" />
-          <img src="../images/child.jpg" alt="img3" class="items" />
-          <img src="../images/tree.jpg" alt="img4" class="items" />
-          <img src="../images/flower.jpg" alt="img5" class="items" />
-          <img src="../images/phone.jpg" alt="img6" class="items" />
-        </div>
+        <div class="portfolio__items"></div>
       </div>
     </section>
     <section>
@@ -247,5 +237,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
